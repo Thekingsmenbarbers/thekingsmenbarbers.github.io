@@ -384,13 +384,20 @@ body {
 /* ========================================
    FINISHING TOUCHES
    ======================================== */
-.finishing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6); }
-.finishing-card { background: var(--color-surface); border: 1px solid var(--color-divider); padding: var(--space-6); text-align: center; transition: all 0.3s ease; }
-.finishing-card:hover { border-color: var(--color-border); }
-.finishing-card__icon { font-size: 2rem; color: var(--color-gold); margin-bottom: var(--space-3); }
-.finishing-card__title { font-family: var(--font-display); font-size: var(--text-lg); color: var(--color-cream); margin-bottom: var(--space-2); }
-.finishing-card__desc { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.7; }
-@media (max-width: 768px) { .finishing-grid { grid-template-columns: 1fr; } }
+.finishing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-8); }
+.finishing-card { background: linear-gradient(160deg, rgba(191,155,81,0.05) 0%, rgba(15,20,32,0.9) 45%); border: 1px solid rgba(191,155,81,0.18); padding: var(--space-10) var(--space-8); text-align: center; transition: transform 0.4s cubic-bezier(0.25,0.46,0.45,0.94), border-color 0.4s ease, box-shadow 0.4s ease; position: relative; overflow: hidden; }
+.finishing-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent 0%, rgba(191,155,81,0.8) 50%, transparent 100%); }
+.finishing-card::after { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% -10%, rgba(191,155,81,0.08) 0%, transparent 65%); opacity: 0; transition: opacity 0.4s ease; pointer-events: none; }
+.finishing-card:hover { border-color: rgba(191,155,81,0.4); transform: translateY(-6px); box-shadow: 0 24px 48px rgba(0,0,0,0.5), 0 0 0 1px rgba(191,155,81,0.12); }
+.finishing-card:hover::after { opacity: 1; }
+.finishing-card__icon-wrap { width: 68px; height: 68px; margin: 0 auto var(--space-6); display: flex; align-items: center; justify-content: center; position: relative; }
+.finishing-card__icon-wrap::before { content: ''; position: absolute; inset: 0; border: 1px solid rgba(191,155,81,0.3); border-radius: 50%; }
+.finishing-card__icon-wrap::after { content: ''; position: absolute; inset: 4px; border: 1px solid rgba(191,155,81,0.12); border-radius: 50%; }
+.finishing-card__icon { display: flex; align-items: center; justify-content: center; position: relative; z-index: 1; }
+.finishing-card__ornament { width: 48px; height: 1px; background: linear-gradient(90deg, transparent, rgba(191,155,81,0.55), transparent); margin: 0 auto var(--space-5); }
+.finishing-card__title { font-family: var(--font-display); font-size: var(--text-lg); font-weight: 400; color: var(--color-cream); margin-bottom: var(--space-3); letter-spacing: 0.04em; }
+.finishing-card__desc { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.85; }
+@media (max-width: 768px) { .finishing-grid { grid-template-columns: 1fr; gap: var(--space-6); } }
 
 /* ========================================
    FOUNDING OFFER CALLOUT

@@ -2,8 +2,8 @@
 
 // Booking app URL — update this when you have your own domain
 var BOOKING_URL = 'https://thekingsmen-crm.fly.dev/#/app/book';
-var APP_URL = 'https://www.perplexity.ai/computer/a/kingsmen-crm-L680VhtXRpykNA9mWj4xPA/#/app';
-var API_BASE = 'https://www.perplexity.ai/computer/a/kingsmen-crm-L680VhtXRpykNA9mWj4xPA';
+var APP_URL = 'https://thekingsmen-crm.fly.dev/#/app';
+var API_BASE = 'https://thekingsmen-crm.fly.dev';
 
 (function() {
   'use strict';
@@ -229,7 +229,7 @@ var API_BASE = 'https://www.perplexity.ai/computer/a/kingsmen-crm-L680VhtXRpykNA
 
   // Show loading state in all service tbodies
   function showLoadingState() {
-    var tbodyIds = ['services-hair', 'services-beard', 'services-grooming', 'services-signature'];
+    var tbodyIds = ['services-cuts', 'services-beard', 'services-grooming', 'services-premium', 'services-hands', 'services-concierge'];
     tbodyIds.forEach(function(id) {
       var tbody = document.getElementById(id);
       if (tbody) {
@@ -310,7 +310,7 @@ var API_BASE = 'https://www.perplexity.ai/computer/a/kingsmen-crm-L680VhtXRpykNA
   }
 
   // Only run on the services page
-  if (!document.getElementById('services-hair')) return;
+  if (!document.getElementById('services-cuts')) return;
 
   showLoadingState();
 
@@ -324,7 +324,7 @@ var API_BASE = 'https://www.perplexity.ai/computer/a/kingsmen-crm-L680VhtXRpykNA
     })
     .catch(function() {
       // CRM offline — show fallback in all tbodies
-      var tbodyIds = ['services-hair', 'services-beard', 'services-grooming', 'services-signature'];
+      var tbodyIds = ['services-cuts', 'services-beard', 'services-grooming', 'services-premium', 'services-hands', 'services-concierge'];
       tbodyIds.forEach(function(id) {
         var tbody = document.getElementById(id);
         if (tbody) showFallback(tbody);

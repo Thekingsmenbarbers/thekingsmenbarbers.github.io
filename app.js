@@ -1,7 +1,7 @@
 // The Kingsmen Barbers — Main JavaScript
 
 // Booking app URL — update this when you have your own domain
-var BOOKING_URL = 'https://www.perplexity.ai/computer/a/kingsmen-crm-L680VhtXRpykNA9mWj4xPA/#/app/book';
+var BOOKING_URL = 'https://thekingsmen-crm.fly.dev/#/app/book';
 var APP_URL = 'https://www.perplexity.ai/computer/a/kingsmen-crm-L680VhtXRpykNA9mWj4xPA/#/app';
 var API_BASE = 'https://www.perplexity.ai/computer/a/kingsmen-crm-L680VhtXRpykNA9mWj4xPA';
 

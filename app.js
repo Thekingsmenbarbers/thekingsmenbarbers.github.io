@@ -178,7 +178,7 @@ var API_BASE = 'https://thekingsmen-crm.fly.dev';
         specialtyTags ? '<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:0.875rem;">' + specialtyTags + '</div>' : '',
         galleryHtml,
         '<a href="' + escapeHtml(bookHref) + '" target="_blank" rel="noopener" class="btn-outline" style="display:inline-flex;align-items:center;gap:6px;margin-top:1.25rem;font-size:0.8rem;padding:0.5rem 1.25rem;">',
-          '✂ Book with ' + escapeHtml(barber.firstName),
+          'Book an Appointment',
         '</a>',
       '</div>'
     ].join('');
@@ -190,12 +190,12 @@ var API_BASE = 'https://thekingsmen-crm.fly.dev';
       return res.json();
     })
     .then(function(staff) {
-      var active = staff.filter(function(s) { return s.isActive; });
-      if (!active.length) {
+      // Server already filters to active staff only — no client-side filter needed
+      if (!staff.length) {
         container.innerHTML = '';
         return;
       }
-      container.innerHTML = '<div class="about-values">' + active.map(buildBarberCard).join('') + '</div>';
+      container.innerHTML = '<div class="about-values">' + staff.map(buildBarberCard).join('') + '</div>';
       // Trigger fade-in observer for the new elements
       var newEls = container.querySelectorAll('.value-card');
       newEls.forEach(function(el) {

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Kingsmen Barbers — A Cut Fit for a King</title>
+  <meta name="description" content="The Kingsmen Barbers — a luxury membership-only barbershop for City of London professionals. Premium grooming, limited to 100 members.">
+  <meta property="og:title" content="The Kingsmen Barbers — A Cut Fit for a King">
+  <meta property="og:description" content="A luxury membership-only barbershop for City of London professionals.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <img src="./assets/logo.png" alt="The Kingsmen Barbers" class="nav-logo-img">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#membership">Membership</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-content">
+      <div class="logo-container" id="logoContainer">
+        <div class="logo-ring"></div>
+        <div class="logo-glow"></div>
+        <img src="./assets/logo.png" alt="The Kingsmen Barbers — Gold shield with barber's pole, crossed scissors, and crown" class="hero-logo" id="heroLogo">
+        <canvas class="sparkle-canvas" id="sparkleCanvas"></canvas>
+      </div>
+      <p class="hero-tagline">A Cut Fit for a King</p>
+      <div class="hero-subtitle">Luxury Membership Barbershop &middot; City of London</div>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span class="scroll-text">Scroll</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section section--cream" id="about">
+    <div class="gold-divider"><div class="gold-divider-line"></div><div class="gold-divider-diamond"></div><div class="gold-divider-line"></div></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Est. MMXXIV</span>
+        <h2 class="section-title">A Gentlemen's<br>Grooming Experience</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="lead">Premium barbering in the heart of the City of London. The Kingsmen Barbers is not merely a barbershop — it is a sanctuary for the modern gentleman, where traditional craft meets contemporary luxury.</p>
+          <p>Exclusively limited to <strong>100 members</strong>, we ensure each gentleman receives the undivided attention and bespoke service befitting his station. From the moment you step through our doors, every detail has been considered — from the hand-stitched leather chairs to the complimentary single-origin espresso.</p>
+          <p>Our team of master barbers have honed their craft across the finest establishments in London, Milan, and New York. Each appointment is an experience designed to restore, refine, and rejuvenate.</p>
+        </div>
+        <div class="about-details reveal">
+          <div class="detail-card">
+            <div class="detail-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 4L23.5 14.5H34L25.5 21L29 32L20 25L11 32L14.5 21L6 14.5H16.5L20 4Z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+            </div>
+            <h3>100 Members Only</h3>
+            <p>Exclusivity is not a luxury — it is a promise of quality.</p>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="1.5"/><path d="M20 10V20L26 26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>By Appointment</h3>
+            <p>Your time is valuable. Every visit is precisely scheduled.</p>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 32V12L20 6L32 12V32" stroke="currentColor" stroke-width="1.5"/><path d="M14 32V22H26V32" stroke="currentColor" stroke-width="1.5"/><circle cx="20" cy="16" r="2" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <h3>City Location</h3>
+            <p>12 Ship Tavern Passage<br>Leadenhall Market<br>London EC3V 1LY</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section section--navy" id="services">
+    <div class="gold-divider"><div class="gold-divider-line"></div><div class="gold-divider-diamond"></div><div class="gold-divider-line"></div></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Craft</span>
+        <h2 class="section-title">Services &amp; Pricing</h2>
+        <p class="section-subtitle">Three tiers of expertise to suit your preference</p>
+      </div>
+
+      <div class="pricing-tiers-header reveal">
+        <div class="tier-label"></div>
+        <div class="tier-label">Senior Stylist</div>
+        <div class="tier-label">Master Barber</div>
+        <div class="tier-label">Director of Grooming</div>
+      </div>
+
+      <!-- Cuts & Trims -->
+      <div class="service-category reveal">
+        <h3 class="category-title">
+          <svg viewBox="0 0 24 24" fill="none" class="category-icon"><path d="M6 3C4.343 3 3 4.343 3 6s1.343 3 3 3c.835 0 1.593-.342 2.139-.894L12 12l-2.861 3.894A2.991 2.991 0 006 15c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3c0-.835-.342-1.593-.894-2.139L12 12l6 8M18 3l-9 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Cuts &amp; Trims
+        </h3>
+        <div class="service-list">
+          <div class="service-row"><span class="service-name">Signature Cut</span><span class="service-price">£45</span><span class="service-price">£55</span><span class="service-price">£65</span></div>
+          <div class="service-row"><span class="service-name">Skin Fade</span><span class="service-price">£40</span><span class="service-price">£50</span><span class="service-price">£60</span></div>
+          <div class="service-row"><span class="service-name">Classic Taper</span><span class="service-price">£35</span><span class="service-price">£45</span><span class="service-price">£55</span></div>
+          <div class="service-row"><span class="service-name">Buzz Cut</span><span class="service-price">£25</span><span class="service-price">£30</span><span class="service-price">£35</span></div>
+          <div class="service-row"><span class="service-name">Junior Cut <span class="service-note">(under 12)</span></span><span class="service-price">£20</span><span class="service-price">£25</span><span class="service-price">£30</span></div>
+        </div>
+      </div>
+
+      <!-- Beard & Shave -->
+      <div class="service-category reveal">
+        <h3 class="category-title">
+          <svg viewBox="0 0 24 24" fill="none" class="category-icon"><path d="M12 2C7 2 3 6 3 11c0 3 1.5 5.5 4 7.5L12 22l5-3.5c2.5-2 4-4.5 4-7.5 0-5-4-9-9-9z" stroke="currentColor" stroke-width="1.5"/><path d="M9 11h6M9 14h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Beard &amp; Shave
+        </h3>
+        <div class="service-list">
+          <div class="service-row"><span class="service-name">Hot Towel Shave</span><span class="service-price">£35</span><span class="service-price">£45</span><span class="service-price">£55</span></div>
+          <div class="service-row"><span class="service-name">Beard Sculpt</span><span class="service-price">£25</span><span class="service-price">£35</span><span class="service-price">£45</span></div>
+          <div class="service-row"><span class="service-name">Beard &amp; Moustache Trim</span><span class="service-price">£15</span><span class="service-price">£20</span><span class="service-price">£25</span></div>
+        </div>
+      </div>
+
+      <!-- Grooming -->
+      <div class="service-category reveal">
+        <h3 class="category-title">
+          <svg viewBox="0 0 24 24" fill="none" class="category-icon"><path d="M12 2a7 7 0 017 7c0 2.5-1.5 5-3 6.5V22h-8v-6.5C6.5 14 5 11.5 5 9a7 7 0 017-7z" stroke="currentColor" stroke-width="1.5"/><path d="M9 22h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Grooming
+        </h3>
+        <div class="service-list">
+          <div class="service-row"><span class="service-name">Facial</span><span class="service-price">£55</span><span class="service-price">£65</span><span class="service-price">£75</span></div>
+          <div class="service-row"><span class="service-name">Scalp Treatment</span><span class="service-price">£40</span><span class="service-price">£50</span><span class="service-price">£60</span></div>
+          <div class="service-row"><span class="service-name">Hair &amp; Scalp Analysis</span><span class="service-price">£30</span><span class="service-price">£40</span><span class="service-price">£50</span></div>
+        </div>
+      </div>
+
+      <!-- Hands & Feet -->
+      <div class="service-category reveal">
+        <h3 class="category-title">
+          <svg viewBox="0 0 24 24" fill="none" class="category-icon"><path d="M18 8a2 2 0 00-2-2h-1a2 2 0 00-2 2M13 8a2 2 0 00-2-2h-1a2 2 0 00-2 2M8 8V6a2 2 0 00-4 0v6c0 4.418 3.582 8 8 8s8-3.582 8-8v-2a2 2 0 00-4 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Hands &amp; Feet
+        </h3>
+        <div class="service-list">
+          <div class="service-row"><span class="service-name">Manicure</span><span class="service-price">£30</span><span class="service-price">£35</span><span class="service-price">£40</span></div>
+          <div class="service-row"><span class="service-name">Pedicure</span><span class="service-price">£35</span><span class="service-price">£40</span><span class="service-price">£45</span></div>
+          <div class="service-row"><span class="service-name">Mani-Pedi Combo</span><span class="service-price">£55</span><span class="service-price">£65</span><span class="service-price">£75</span></div>
+        </div>
+      </div>
+
+      <!-- Premium Experiences -->
+      <div class="service-category service-category--premium reveal">
+        <h3 class="category-title">
+          <svg viewBox="0 0 24 24" fill="none" class="category-icon"><path d="M12 2l3 7h7l-5.5 4.5 2 7L12 16l-6.5 4.5 2-7L2 9h7l3-7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          Premium Experiences
+        </h3>
+        <div class="service-list">
+          <div class="service-row service-row--premium"><span class="service-name">The Full Kingsmen<span class="service-note">Cut + Shave + Facial + Scalp</span></span><span class="service-price">£120</span><span class="service-price">£150</span><span class="service-price">£180</span></div>
+          <div class="service-row service-row--premium"><span class="service-name">The Royal Treatment<span class="service-note">All of the above + Mani-Pedi</span></span><span class="service-price">£160</span><span class="service-price">£200</span><span class="service-price">£240</span></div>
+        </div>
+      </div>
+
+      <!-- Concierge -->
+      <div class="service-category reveal">
+        <h3 class="category-title">
+          <svg viewBox="0 0 24 24" fill="none" class="category-icon"><path d="M4 20h16M4 20v-4h16v4M6 16V8l6-4 6 4v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="2" stroke="currentColor" stroke-width="1.5"/></svg>
+          Concierge Services
+        </h3>
+        <div class="service-list concierge-list">
+          <div class="service-row service-row--concierge"><span class="service-name">Dry Cleaning Drop-off</span><span class="service-price service-price--single">£15</span></div>
+          <div class="service-row service-row--concierge"><span class="service-name">Shoe Shine</span><span class="service-price service-price--single">£10</span></div>
+          <div class="service-row service-row--concierge"><span class="service-name">Morning Espresso / Tea</span><span class="service-price service-price--single">Complimentary</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membership Section -->
+  <section class="section section--cream" id="membership">
+    <div class="gold-divider"><div class="gold-divider-line"></div><div class="gold-divider-diamond"></div><div class="gold-divider-line"></div></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Membership</span>
+        <h2 class="section-title">Choose Your Standing</h2>
+        <p class="section-subtitle">Five tiers of membership, each crafted for the discerning gentleman</p>
+      </div>
+
+      <div class="membership-grid">
+        <!-- Gentleman -->
+        <div class="membership-card reveal">
+          <div class="membership-tier-badge">I</div>
+          <h3 class="membership-name">Gentleman</h3>
+          <div class="membership-price"><span class="price-amount">£150</span><span class="price-period">/month</span></div>
+          <ul class="membership-features">
+            <li>4 cuts per month</li>
+            <li>10% product discount</li>
+            <li>Standard booking</li>
+          </ul>
+        </div>
+
+        <!-- Sovereign -->
+        <div class="membership-card reveal">
+          <div class="membership-tier-badge">II</div>
+          <h3 class="membership-name">Sovereign</h3>
+          <div class="membership-price"><span class="price-amount">£250</span><span class="price-period">/month</span></div>
+          <ul class="membership-features">
+            <li>6 cuts per month</li>
+            <li>1 hot towel shave</li>
+            <li>15% product discount</li>
+            <li>Priority booking</li>
+          </ul>
+        </div>
+
+        <!-- Monarch -->
+        <div class="membership-card membership-card--featured reveal">
+          <div class="membership-featured-label">Most Popular</div>
+          <div class="membership-tier-badge">III</div>
+          <h3 class="membership-name">Monarch</h3>
+          <div class="membership-price"><span class="price-amount">£400</span><span class="price-period">/month</span></div>
+          <ul class="membership-features">
+            <li>8 cuts per month</li>
+            <li>2 hot towel shaves</li>
+            <li>1 facial</li>
+            <li>20% product discount</li>
+            <li>Same-day booking</li>
+          </ul>
+        </div>
+
+        <!-- Viceroy -->
+        <div class="membership-card reveal">
+          <div class="membership-tier-badge">IV</div>
+          <h3 class="membership-name">Viceroy</h3>
+          <div class="membership-price"><span class="price-amount">£525</span><span class="price-period">/month</span></div>
+          <ul class="membership-features">
+            <li>10 cuts per month</li>
+            <li>Unlimited shaves</li>
+            <li>2 facials</li>
+            <li>25% product discount</li>
+            <li>Priority everything</li>
+            <li>Complimentary drinks</li>
+          </ul>
+        </div>
+
+        <!-- Regent -->
+        <div class="membership-card membership-card--regent reveal">
+          <div class="membership-tier-badge">V</div>
+          <h3 class="membership-name">Regent</h3>
+          <div class="membership-price"><span class="price-amount">£750</span><span class="price-period">/month</span></div>
+          <ul class="membership-features">
+            <li>Unlimited cuts</li>
+            <li>Unlimited shaves</li>
+            <li>Unlimited facials</li>
+            <li>2 premium experiences</li>
+            <li>30% product discount</li>
+            <li>Personal concierge</li>
+            <li>After-hours access</li>
+            <li>Complimentary products</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="section section--dark" id="products">
+    <div class="gold-divider"><div class="gold-divider-line"></div><div class="gold-divider-diamond"></div><div class="gold-divider-line"></div></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">The Collection</span>
+        <h2 class="section-title">The Kingsmen<br>Product Line</h2>
+        <p class="section-subtitle">Signature fragrances and grooming essentials crafted exclusively for our members</p>
+      </div>
+
+      <div class="products-heading reveal">
+        <h3 class="products-category-title">Signature Colognes</h3>
+      </div>
+
+      <div class="cologne-grid">
+        <!-- The Sovereign -->
+        <div class="cologne-card reveal">
+          <div class="cologne-visual">
+            <div class="cologne-bottle">
+              <svg viewBox="0 0 120 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="bottle-svg">
+                <rect x="42" y="10" width="36" height="16" rx="2" stroke="#C5A55A" stroke-width="1.5"/>
+                <rect x="48" y="0" width="24" height="14" rx="3" stroke="#C5A55A" stroke-width="1.5"/>
+                <path d="M35 30H85V40C85 40 95 50 95 70V180C95 190 85 195 60 195C35 195 25 190 25 180V70C25 50 35 40 35 30Z" stroke="#C5A55A" stroke-width="1.5"/>
+                <path d="M35 60H85" stroke="#C5A55A" stroke-width="0.75" opacity="0.5"/>
+                <text x="60" y="130" text-anchor="middle" fill="#C5A55A" font-family="Cormorant Garamond" font-size="11" font-weight="600" letter-spacing="1">THE</text>
+                <text x="60" y="148" text-anchor="middle" fill="#C5A55A" font-family="Cormorant Garamond" font-size="14" font-weight="700" letter-spacing="2">SOVEREIGN</text>
+              </svg>
+            </div>
+          </div>
+          <h4 class="cologne-name">The Sovereign</h4>
+          <p class="cologne-notes">Bergamot &middot; Black Pepper &middot; Leather &middot; Oud &middot; Amber</p>
+          <p class="cologne-desc">A commanding presence. The Sovereign opens with a burst of Italian bergamot and black pepper, settling into a heart of supple leather and rare oud, finished with warm amber.</p>
+        </div>
+
+        <!-- The City -->
+        <div class="cologne-card reveal">
+          <div class="cologne-visual">
+            <div class="cologne-bottle">
+              <svg viewBox="0 0 120 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="bottle-svg">
+                <rect x="42" y="10" width="36" height="16" rx="2" stroke="#C5A55A" stroke-width="1.5"/>
+                <rect x="48" y="0" width="24" height="14" rx="3" stroke="#C5A55A" stroke-width="1.5"/>
+                <path d="M35 30H85V40C85 40 95 50 95 70V180C95 190 85 195 60 195C35 195 25 190 25 180V70C25 50 35 40 35 30Z" stroke="#C5A55A" stroke-width="1.5"/>
+                <path d="M35 60H85" stroke="#C5A55A" stroke-width="0.75" opacity="0.5"/>
+                <text x="60" y="130" text-anchor="middle" fill="#C5A55A" font-family="Cormorant Garamond" font-size="11" font-weight="600" letter-spacing="1">THE</text>
+                <text x="60" y="148" text-anchor="middle" fill="#C5A55A" font-family="Cormorant Garamond" font-size="14" font-weight="700" letter-spacing="2">CITY</text>
+              </svg>
+            </div>
+          </div>
+          <h4 class="cologne-name">The City</h4>
+          <p class="cologne-notes">Citrus &middot; Juniper &middot; Sea Salt &middot; Vetiver &middot; White Musk</p>
+          <p class="cologne-desc">Fresh and aromatic. Designed for the gentleman who moves with purpose. Clean citrus and juniper give way to a refined base of vetiver and white musk.</p>
+        </div>
+
+        <!-- The Regent -->
+        <div class="cologne-card reveal">
+          <div class="cologne-visual">
+            <div class="cologne-bottle">
+              <svg viewBox="0 0 120 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="bottle-svg">
+                <rect x="42" y="10" width="36" height="16" rx="2" stroke="#C5A55A" stroke-width="1.5"/>
+                <rect x="48" y="0" width="24" height="14" rx="3" stroke="#C5A55A" stroke-width="1.5"/>
+                <path d="M35 30H85V40C85 40 95 50 95 70V180C95 190 85 195 60 195C35 195 25 190 25 180V70C25 50 35 40 35 30Z" stroke="#C5A55A" stroke-width="1.5"/>
+                <path d="M35 60H85" stroke="#C5A55A" stroke-width="0.75" opacity="0.5"/>
+                <text x="60" y="130" text-anchor="middle" fill="#C5A55A" font-family="Cormorant Garamond" font-size="11" font-weight="600" letter-spacing="1">THE</text>
+                <text x="60" y="148" text-anchor="middle" fill="#C5A55A" font-family="Cormorant Garamond" font-size="14" font-weight="700" letter-spacing="2">REGENT</text>
+              </svg>
+            </div>
+          </div>
+          <h4 class="cologne-name">The Regent</h4>
+          <p class="cologne-notes">Tobacco Leaf &middot; Oud &middot; Sandalwood &middot; Vanilla &middot; Dark Honey</p>
+          <p class="cologne-desc">Rich opulence. An evening fragrance of distinction. Warm tobacco leaf and deep oud create an intoxicating foundation of refined indulgence.</p>
+        </div>
+      </div>
+
+      <div class="products-also reveal">
+        <div class="also-items">
+          <div class="also-item">
+            <div class="also-icon">
+              <svg viewBox="0 0 40 40" fill="none"><path d="M20 4C14 4 10 8 10 14V28C10 32 14 36 20 36C26 36 30 32 30 28V14C30 8 26 4 20 4Z" stroke="currentColor" stroke-width="1.5"/><path d="M10 18H30" stroke="currentColor" stroke-width="1" opacity="0.5"/></svg>
+            </div>
+            <span>Hair Styling</span>
+          </div>
+          <div class="also-item">
+            <div class="also-icon">
+              <svg viewBox="0 0 40 40" fill="none"><path d="M12 36V10C12 6 16 4 20 4C24 4 28 6 28 10V36" stroke="currentColor" stroke-width="1.5"/><path d="M8 36H32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="20" cy="16" r="3" stroke="currentColor" stroke-width="1"/></svg>
+            </div>
+            <span>Beard Oils</span>
+          </div>
+          <div class="also-item">
+            <div class="also-icon">
+              <svg viewBox="0 0 40 40" fill="none"><rect x="8" y="8" width="24" height="28" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M14 4V10M26 4V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M14 18H26M14 24H22" stroke="currentColor" stroke-width="1" opacity="0.6" stroke-linecap="round"/></svg>
+            </div>
+            <span>Skincare</span>
+          </div>
+          <div class="also-item">
+            <div class="also-icon">
+              <svg viewBox="0 0 40 40" fill="none"><path d="M10 20C10 14 14 8 20 8C26 8 30 14 30 20" stroke="currentColor" stroke-width="1.5"/><path d="M6 20H34V28C34 32 30 36 20 36C10 36 6 32 6 28V20Z" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <span>Accessories</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section--navy" id="contact">
+    <div class="gold-divider"><div class="gold-divider-line"></div><div class="gold-divider-diamond"></div><div class="gold-divider-line"></div></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Visit Us</span>
+        <h2 class="section-title">Begin Your<br>Membership</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-block">
+            <h3>Location</h3>
+            <p>12 Ship Tavern Passage<br>Leadenhall Market<br>London EC3V 1LY</p>
+          </div>
+          <div class="contact-block">
+            <h3>Online</h3>
+            <p><a href="https://www.thekingsmenbarbers.co.uk" target="_blank" rel="noopener noreferrer">www.thekingsmenbarbers.co.uk</a></p>
+          </div>
+          <div class="contact-block">
+            <h3>Hours</h3>
+            <p>Monday – Friday: 7:00 – 20:00<br>Saturday: 8:00 – 18:00<br>Sunday: By appointment</p>
+          </div>
+        </div>
+
+        <div class="contact-app reveal">
+          <h3>Download Our App</h3>
+          <p>Book appointments, manage your membership, and shop our product line — all from your phone.</p>
+          <div class="qr-container">
+            <img src="./assets/qr-code.png" alt="QR code to download The Kingsmen Barbers app" class="qr-image">
+            <span class="qr-label">Scan to download</span>
+          </div>
+          <div class="app-badges">
+            <a href="#" class="app-badge" aria-label="Download on the App Store">
+              <svg viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="119" height="39" rx="5.5" stroke="#C5A55A"/>
+                <text x="60" y="16" text-anchor="middle" fill="#C5A55A" font-family="DM Sans" font-size="7" letter-spacing="0.5">Download on the</text>
+                <text x="60" y="29" text-anchor="middle" fill="#C5A55A" font-family="DM Sans" font-size="13" font-weight="700">App Store</text>
+              </svg>
+            </a>
+            <a href="#" class="app-badge" aria-label="Get it on Google Play">
+              <svg viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="119" height="39" rx="5.5" stroke="#C5A55A"/>
+                <text x="60" y="16" text-anchor="middle" fill="#C5A55A" font-family="DM Sans" font-size="7" letter-spacing="0.5">GET IT ON</text>
+                <text x="60" y="29" text-anchor="middle" fill="#C5A55A" font-family="DM Sans" font-size="13" font-weight="700">Google Play</text>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <img src="./assets/logo.png" alt="The Kingsmen Barbers" class="footer-logo">
+      <p class="footer-tagline">A Cut Fit for a King</p>
+      <div class="footer-line"></div>
+      <p class="footer-legal">&copy; 2026 The Kingsmen Barbers. All rights reserved. Membership subject to availability.</p>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

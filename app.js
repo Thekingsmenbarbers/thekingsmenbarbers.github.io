@@ -1,9 +1,9 @@
 // The Kingsmen Barbers — Main JavaScript
 
 // Booking app URL — update this when you have your own domain
-var BOOKING_URL = 'https://thekingsmen-crm.fly.dev/#/app/book';
-var APP_URL = 'https://thekingsmen-crm.fly.dev/#/app';
-var API_BASE = 'https://thekingsmen-crm.fly.dev';
+var BOOKING_URL = 'https://crm.thekingsmenbarbers.co.uk/app/book';
+var APP_URL = 'https://crm.thekingsmenbarbers.co.uk/app';
+var API_BASE = 'https://crm.thekingsmenbarbers.co.uk';
 
 (function() {
   'use strict';

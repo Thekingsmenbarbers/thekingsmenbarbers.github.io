@@ -29,8 +29,8 @@
   --space-24: 6rem;
   --space-32: 8rem;
 
-  --font-display: 'Cormorant Garamond', 'Georgia', serif;
-  --font-body: 'Switzer', 'Helvetica Neue', sans-serif;
+  --font-display: 'Playfair Display', 'Georgia', serif;
+  --font-body: 'DM Sans', 'Helvetica Neue', sans-serif;
 
   --content-narrow: 640px;
   --content-default: 960px;
